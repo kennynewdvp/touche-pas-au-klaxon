@@ -1,0 +1,20 @@
+// _variables.scss
+
+// 1. Définition des couleurs de votre charte
+$my-white-bg:   #f1f8fc;
+$my-blue-bright:#0074c7;
+$my-blue-dark:  #00497c;
+$my-dark-gray:  #384050;
+$my-red:        #cd2c2e;
+$my-green:      #82b64;
+
+// 2. Override des variables Bootstrap
+$primary:       $my-blue-bright;    // Couleur principale
+$secondary:     $my-blue-dark;      // Couleur secondaire
+$success:       $my-green;          // Pour les validations
+$danger:        $my-red;            // Pour les erreurs/suppressions
+$body-bg:       $my-white-bg;       // Couleur de fond du site
+$body-color:    $my-dark-gray;      // Couleur du texte principal
+
+// 3. Optionnel : Personnalisation globale des boutons (ex: arrondis)
+$border-radius: 0.3rem;

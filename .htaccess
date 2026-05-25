@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # 1. Si on tape juste l'adresse du dossier principal, on redirige vers l'accueil
+    RewriteRule ^$ public/index.php [QSA,L]
+
+    # 2. Si on demande un vrai fichier (ex: assets/style.css), on le laisse s'afficher
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+
+    # 3. Sinon, on attrape tout le reste et on l'envoie au contrôleur principal
+    RewriteRule ^(.*)$ public/index.php?url=$1 [QSA,L]
+</IfModule>

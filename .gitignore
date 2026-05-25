@@ -1,0 +1,17 @@
+# Fichiers systèmes Windows et Mac
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Dossiers cachés des éditeurs de code (VS Code, PhpStorm...)
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Dossiers de serveurs locaux (au cas où)
+.Xil/
+
+node_modules/
